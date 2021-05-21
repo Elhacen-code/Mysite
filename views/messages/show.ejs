@@ -1,0 +1,26 @@
+
+<%- include('../pages/footer'); -%>
+
+<div class="ui comments">
+    <h3 class="ui dividing header">Commentaires</h3>
+    
+        <div class="comment">
+            <a class="avatar" href="/message/<% message.id %>">
+                <img src="C:\Users\pc\Desktop\S2\Mon Travail M2H\MySite\1.PNG">
+            </a>
+            <div class="content">
+                <div class="meta data">
+                    <div class="data">
+                        <%= message.created_at.fromNow() %>
+                    </div>
+                </div>
+                <div class="test">
+                    <%= message.content %>
+                </div>
+            </div>
+        </div>
+
+
+</div>
+
+<%- include('../pages/footer'); -%>
